@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="787e41dc-4755-4089-8654-d1c1843a10dd"
+    Name="71173995-3678-41bc-a087-28490ad792ba"
     Publisher="CN=menet"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="787e41dc-4755-4089-8654-d1c1843a10dd" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="71173995-3678-41bc-a087-28490ad792ba" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>TwitchViewerBot</DisplayName>

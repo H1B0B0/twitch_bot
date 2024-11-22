@@ -5,6 +5,7 @@ import {
     Text,
     TextInput,
     Pressable,
+    Button,
     View,
     Animated,
     useColorScheme,
