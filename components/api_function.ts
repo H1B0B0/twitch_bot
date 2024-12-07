@@ -58,9 +58,21 @@ export async function callRegisterHwidApi(token: string, hwid: string) {
 
 export async function callGetHwidApi(token: string) {
     const url = `${BASE_URL}/auth/hwid`;
-    return await fetch(url, {
-        headers: { 'Authorization': `Bearer ${token}` }
-    });
+    try {
+        const response = await fetch(url, {
+            headers: { 'Authorization': `Bearer ${token}` }
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || 'Failed to fetch HWID');
+        }
+
+        return response;
+    } catch (error) {
+        console.error('Error fetching HWID:', error);
+        throw error;
+    }
 }
 
 export async function callProfileApi(token: string) {
